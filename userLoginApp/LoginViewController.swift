@@ -9,27 +9,17 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userLoginTF: UITextField!
     @IBOutlet weak var userPasswordTF: UITextField!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        userLoginTF.becomeFirstResponder()
-//    }
-
     @IBAction func loginButton() {
         if userLoginTF.text == userName && userPasswordTF.text == password {
             performSegue(withIdentifier: "welcomeVCSegue", sender: nil)
         } else {
-            showAlert(title: "Invalid ligin or password", message: "Please enter correct login and password")
+            showAlert(title: "Invalid login or password", message: "Please enter correct login and password")
         }
     }
     
     @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
-        userLoginTF.text = ""
         userPasswordTF.text = ""
-//        userLoginTF.becomeFirstResponder()
+        userLoginTF.text = ""
     }
     
     @IBAction func userLoginHelpButton() {
