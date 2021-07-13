@@ -2,10 +2,10 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
-    var username: String?
     
     @IBOutlet weak var welcomeLabel: UILabel!
+    
+    var username: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
