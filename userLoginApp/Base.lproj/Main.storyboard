@@ -36,7 +36,6 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="6aV-GR-6pw"/>
-                                    <segue destination="JSn-ZY-sxb" kind="presentation" id="XV2-Ul-o4X"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cmn-l3-DGn">
@@ -80,6 +79,7 @@
                     <connections>
                         <outlet property="userLoginTF" destination="rlO-EK-oNd" id="AGv-c5-oKZ"/>
                         <outlet property="userPasswordTF" destination="aKk-8h-rjw" id="WMK-5X-dpZ"/>
+                        <segue destination="JSn-ZY-sxb" kind="presentation" identifier="welcomeVCSegue" id="d3n-Mc-jq1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

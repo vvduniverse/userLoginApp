@@ -3,6 +3,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    private let userName = "Eugeniya"
+    private let password = "swiftbook"
+    
     @IBOutlet weak var userLoginTF: UITextField!
     @IBOutlet weak var userPasswordTF: UITextField!
     override func viewDidLoad() {
@@ -11,6 +14,9 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginButton() {
+        if userLoginTF.text == userName || userPasswordTF.text == password {
+        performSegue(withIdentifier: "welcomeVCSegue", sender: nil)
+        }
     }
     
     @IBAction func userLoginHelpButton() {
