@@ -35,6 +35,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
+                                    <action selector="loginButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="6aV-GR-6pw"/>
                                     <segue destination="JSn-ZY-sxb" kind="presentation" id="XV2-Ul-o4X"/>
                                 </connections>
                             </button>
@@ -45,6 +46,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Forgot User Name?"/>
+                                <connections>
+                                    <action selector="userLoginHelpButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="TBR-A4-AhZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI5-8y-zLf">
                                 <rect key="frame" x="191" y="300" width="94" height="26"/>
@@ -53,6 +57,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Forgot Password?"/>
+                                <connections>
+                                    <action selector="userPasswordHelpButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="I6L-dW-JKP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -70,6 +77,10 @@
                             <constraint firstItem="dDv-yM-iLR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="yhO-6p-bZb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userLoginTF" destination="rlO-EK-oNd" id="AGv-c5-oKZ"/>
+                        <outlet property="userPasswordTF" destination="aKk-8h-rjw" id="WMK-5X-dpZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,8 +94,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hy-Hb-F7x">
-                                <rect key="frame" x="139" y="107" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="some welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hy-Hb-F7x">
+                                <rect key="frame" x="103" y="107" width="114" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
