@@ -15,8 +15,12 @@ class LoginViewController: UIViewController {
 
     @IBAction func loginButton() {
         if userLoginTF.text == userName || userPasswordTF.text == password {
-        performSegue(withIdentifier: "welcomeVCSegue", sender: nil)
+            performSegue(withIdentifier: "welcomeVCSegue", sender: nil)
         }
+    }
+    
+    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
+        
     }
     
     @IBAction func userLoginHelpButton() {
@@ -30,6 +34,9 @@ class LoginViewController: UIViewController {
         welcomeVC.username = userLoginTF.text
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
 }
 
