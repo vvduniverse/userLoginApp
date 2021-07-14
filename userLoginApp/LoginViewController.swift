@@ -26,17 +26,17 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
-        userPasswordTF.text = ""
-        userLoginTF.text = ""
-    }
-    
     @IBAction func userLoginHelpButton() {
         showAlert(title: "Oops! 🍄", message: "Your name is \(userName) 🤡")
     }
     
     @IBAction func userPasswordHelpButton() {
         showAlert(title: "Oops, again! 💊", message: "Your password is \(password) 👽")
+    }
+        
+    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
+        userPasswordTF.text = ""
+        userLoginTF.text = ""
     }
     
 }
