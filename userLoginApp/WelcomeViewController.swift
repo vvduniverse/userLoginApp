@@ -5,15 +5,12 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var welcomeLabel: UILabel!
     
-    var username: String?
+    var username: String? = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let username = self.username else { return }
         welcomeLabel.text = "Welcome, \(username)!"
-    }
-    
-    @IBAction func logoutTapped() {
     }
     
 }

@@ -89,9 +89,9 @@
         <!--Welcome View Controller-->
         <scene sceneID="J4B-J0-dSh">
             <objects>
-                <viewController id="JSn-ZY-sxb" customClass="WelcomeViewController" customModule="userLoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="JSn-ZY-sxb" customClass="WelcomeViewController" customModule="userLoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wzl-3u-b1j">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="some welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hy-Hb-F7x">
@@ -104,7 +104,6 @@
                                 <rect key="frame" x="134" y="360.5" width="52" height="30"/>
                                 <state key="normal" title="Log out"/>
                                 <connections>
-                                    <action selector="logoutTapped" destination="JSn-ZY-sxb" eventType="touchUpInside" id="qQq-iu-MzY"/>
                                     <segue destination="smD-TS-GF6" kind="unwind" unwindAction="unwindFor:" id="LMo-o8-oMg"/>
                                 </connections>
                             </button>
