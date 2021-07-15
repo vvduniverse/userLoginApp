@@ -40,8 +40,14 @@ class LoginViewController: UIViewController {
         userLoginTF.text = ""
     }
     
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        userLoginTF.delegate = self
+//        userPasswordTF.delegate = self
+//    }
+    
 }
-
+//extension LoginViewController: UITextFieldDelegate {
 extension LoginViewController {
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -51,4 +57,12 @@ extension LoginViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
+    
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        if textField == userLoginTF {
+//            userPasswordTF.becomeFirstResponder()
+//        }
+//        return true
+//    }
+
 }
